@@ -276,17 +276,17 @@ end
 
 export Text, @text_str, @text_mstr
 
-# @doc """
-# `Text(s)`: Create an object that renders `s` as plain text.
+@doc """
+`Text(s)`: Create an object that renders `s` as plain text.
 
-#     HTML("foo")
+    HTML("foo")
 
-# You can also use a stream for large amounts of data:
+You can also use a stream for large amounts of data:
 
-#     Text() do io
-#       println(io, "foo")
-#     end
-# """ ->
+    Text() do io
+      println(io, "foo")
+    end
+""" ->
 type Text{T}
   content::T
 end
