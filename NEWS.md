@@ -97,6 +97,8 @@ Library improvements
 
   * OpenBLAS 64-bit (ILP64) interface is now compiled with a `64_` suffix ([#8734]) to avoid conflicts with external libraries using a 32-bit BLAS ([#4923]).
 
+  * `String` has been renamed to `AbstractString`.
+
 Deprecated or removed
 ---------------------
 
